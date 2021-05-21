@@ -3,6 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .header__logo-link {
@@ -67,4 +68,9 @@
   box-sizing: border-box;
   border-radius: 5px;
   padding: 13px 25px;
+}
+
+.header__contacts-request-call:hover {
+  background-color: $color-white;
+  color: $color-black;
 }
