@@ -15,8 +15,12 @@
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
+
   <header class="header-promo">
-    <div class="header-promo__header header container">
+    <section class="header-promo__header header container">
       <a class="header__logo-link" href="#">
         <img class="header__logo-img" src="img/logo.svg" alt="логотип">
         <div class="header__logo-text">
@@ -26,17 +30,23 @@
       </a>
       <div class="header__contacts">
         <a class="header__contacts-mail" href="mailto:info@sd.ru">
-          <img src="img/mail.svg" alt="">
+          <svg width="19" height="14">
+            <use xlink:href="#icon-mail"></use>
+          </svg>
+          <!-- <img src="img/mail.svg" alt=""> -->
           <p class="header__contacts-text">info@sd.ru</p>
         </a>
         <a class="header__contacts-phone" href="tel:+7 (495) 000 52 52">
-          <img src="img/phone.svg" alt="">
+          <svg width="18" height="18">
+            <use xlink:href="#icon-phone"></use>
+          </svg>
+          <!-- <img src="img/phone.svg" alt=""> -->
           <p class="header__contacts-text">+7 (495) 000 52 52</p>
         </a>
         <a class="header__contacts-request-call" href="#">Заказать звонок</a>
       </div>
-    </div>
-    <div class="header-promo__promo promo container">
+    </section>
+    <section class="header-promo__promo promo container">
       <div class="promo__img">
 
       </div>
@@ -46,9 +56,101 @@
         <button class="promo__btn">Получить бесплатную консультацию</button>
       </div>
       <p class="promo__scroll">Скролл вниз</p>
-    </div>
+    </section>
 
   </header>
+
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__content">
+        <section class="page-footer__links">
+          <h2 class="visually-hidden">Мы в социальных сетях</h2>
+
+          <a class="footer__logo-link" href="#">
+            <img class="footer__logo-img" src="img/logo.svg" alt="логотип">
+            <div class="footer__logo-text">
+              <p class="footer__logo-title">Smart Device</p>
+              <img class="footer__logo-description" src="img/logo-description.svg" alt="">
+            </div>
+          </a>
+
+          <p class="footer__tablet-copyright">1999-2018 SD Service Devices</p>
+
+          <ul class="footer__social">
+            <li>
+              <a class="footer__link" href="#" aria-label="Мы в Фейсбуке">
+                <svg width="27" height="27">
+                  <use xlink:href="#icon-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Мы в Одноклассниках">
+                <svg width="26" height="26">
+                  <use xlink:href="#icon-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="footer__link" href="#" aria-label="Мы в Контакте">
+                <svg width="26" height="26">
+                  <use xlink:href="#icon-vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer__menu">
+          <button class="footer__accordion" type="button" aria-label="Открыть выпадающий список" tabindex="-1">Разделы
+            сайта</button>
+          <div class="footer__accordion-panel footer__accordion-panel--no-js">
+            <ul class="footer__list">
+              <li class="footer__item footer__item--about"><a class="footer__item-link" href="#">О компании</a></li>
+              <li class="footer__item footer__item--details"><a class="footer__item-link" href="#">Комплектующие</a>
+              </li>
+              <li class="footer__item footer__item--products"><a class="footer__item-link" href="#">Продукты</a></li>
+              <li class="footer__item footer__item--delivery"><a class="footer__item-link" href="#">Доставка</a></li>
+              <li class="footer__item footer__item--production"><a class="footer__item-link" href="#">Производство
+                  печатных плат</a></li>
+              <li class="footer__item footer__item--contacts"><a class="footer__item-link" href="#">Контакты</a></li>
+              <li class="footer__item footer__item--montage"><a class="footer__item-link" href="#">Монтаж печатных
+                  плат</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__contacts">
+          <button class="footer__accordion footer__accordion--active" type="button"
+            aria-label="Открыть выпадающий список" tabindex="-1">Наш офис</button>
+          <div class="footer__accordion-panel footer__accordion-panel--active">
+            <address class="footer__address">г. Мытищи, Олимпийский проспект,&nbsp;д.10</address>
+            <ul class="footer__contacts-list">
+              <li><a class="footer__contacts-link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+              <li><a class="footer__contacts-link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+              <li><a class="footer__contacts-link" href="tel:+792692608079"> +7 (926) 926-080-79</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+    <section class="footer__bottom">
+      <div class="footer__container container">
+        <div class="footer__content-bottom">
+        <h2 class="visually-hidden">Копирайт</h2>
+        <p class="footer__bottom-copyright">
+          <span>Все права защищены</span>
+          1999-2018 SD Service Devices
+        </p>
+        <a class="footer__confidentiality" href="#">Условия конфиденциальности</a>
+        <p class="footer__developed">Developed by <a href="#">wow studio</a></p>
+      </div>
+
+      </div>
+    </section>
+
+  </footer>
+
 </body>
 
 </html>

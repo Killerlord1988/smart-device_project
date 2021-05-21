@@ -1,0 +1,153 @@
+.footer {
+  padding-top: 61px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 55px;
+}
+
+.page-footer__links {
+  width: 20%;
+}
+
+.footer__logo-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 54px;
+}
+
+.footer__logo-img {
+  margin-right: 16px;
+}
+
+.footer__logo-title {
+  margin: 0;
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: $color-black;
+  user-select: none;
+}
+
+.footer__tablet-copyright {
+  display: none;
+}
+
+.footer__social {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer__social li:not(:last-child) {
+  margin-right: 14px;
+}
+
+.footer__link svg {
+  fill: $color-grey-icon;
+}
+
+.footer__link svg:hover {
+  fill: $color-blue;
+}
+
+.footer__menu {
+  width: 50%;
+  padding-left: 138px;
+  flex-grow: 1;
+}
+
+.footer__accordion {
+  padding: 0;
+  margin-bottom: 29px;
+  position: relative;
+  font-family: $second-font;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__item {
+  width: 44%;
+  margin-right: 20px;
+}
+
+.footer__item-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: $color-black;
+  opacity: 0.5;
+}
+
+.footer__contacts {
+  padding-left: 5px;
+}
+
+.footer__address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.footer__contacts-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__contacts-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  opacity: 0.5;
+  color: $color-black;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(53, 55, 53, 0.5);
+}
+
+.footer__content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__bottom-copyright,
+.footer__confidentiality,
+.footer__developed {
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  opacity: 50%;
+  color: $color-black;
+}
+
+.footer__bottom-copyright span {
+  margin-right: 59px;
+}
