@@ -1,0 +1,79 @@
+.button {
+  font-family: $second-font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 10px 32px;
+  display: inline-block;
+  vertical-align: middle;
+  color: $color-white;
+  border: 1px solid $color-white;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    outline: 1px auto $color-text;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--blue {
+    font-size: 16px;
+    line-height: 19px;
+    margin-left: 92px;
+    padding: 16px 45px;
+    letter-spacing: 0.05em;
+    background: $color-blue;
+    border: none;
+
+    @media (max-width: $tablet-width) {
+      margin-left: 51px;
+      padding: 16px 30px;
+    }
+
+    @media (max-width: $mobile-width) {
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px 30px;
+    }
+  }
+
+  &--blue-small {
+    display: none;
+  }
+
+  &--blue-border {
+    padding: 12px 52px;
+    color: $color-blue;
+    border-color: $color-blue;
+  }
+
+  &--submit {
+    width: 48%;
+    padding: 13px 32px;
+    letter-spacing: 0.05em;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .button--blue-small {
+    display: inline-block;
+  }
+
+  .button--blue-big {
+    display: none;
+  }
+
+  .button--submit {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+}

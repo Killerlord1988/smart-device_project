@@ -1,0 +1,19 @@
+.content {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+}
+
+.content__about-container {
+  background-image: url("../img/feature-bg-desktop.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $color-white;
+  background-position: 0 -32px;
+}
+
+@media (max-width: $mobile-width) {
+  .content__about-container {
+    background-image: none;
+  }
+}
