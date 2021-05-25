@@ -216,6 +216,30 @@
       </div>
     </section>
 
+    <section class="feedback" id="consultation">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <div class="feedback__container container">
+        <div class="feedback__image"></div>
+        <form class="form form--feedback" action="https://echo.htmlacademy.ru" method="POST">
+          <h3>Остались вопросы? Задайте их нам!</h3>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <div class="form__row form__row--half">
+            <label class="visually-hidden" for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Имя" required="">
+            <label class="visually-hidden" for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" placeholder="Телефон" pattern="\+7(\([0-9]{3}\))([0-9]{7})" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required="">
+          </div>
+          <label class="visually-hidden" for="comment">Поле для ввода сообщения</label>
+          <textarea name="comment" id="comment" rows="4" cols="35" placeholder="Ваш вопрос"></textarea>
+          <div class="form__row form__row--submit">
+            <button class="button button--submit" type="submit">Задать вопрос</button>
+            <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked="" required="">
+            <label for="agreement">Я согласен на обработку персональных данных</label>
+          </div>
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">
