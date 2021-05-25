@@ -1,0 +1,59 @@
+.accordion {
+  margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
+  font-size: 15px;
+  line-height: 16px;
+  position: relative;
+  font-family: $second-font;
+  font-weight: 400;
+  color: color-blue;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+
+  &::after {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .accordion {
+    width: 100%;
+    margin-bottom: 28px;
+    display: block;
+    text-align: left;
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      display: block;
+      content: url("../img/plus.svg");
+    }
+
+    &--active::after {
+      top: -5px;
+      content: url("../img/minus.svg");
+    }
+  }
+
+  .accordion__panel {
+    display: none;
+  }
+
+  .accordion__panel--hidden {
+    display: none;
+  }
+
+  .accordion__panel--visible,
+  .accordion__panel--no-js {
+    display: block;
+  }
+
+  .accordion__panel--active {
+    display: block;
+  }
+}
