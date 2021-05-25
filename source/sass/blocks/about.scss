@@ -42,3 +42,63 @@
     background-image: url("../img/year-desktop@2x.png");
   }
 }
+
+@media (max-width: $tablet-width) {
+  .about__container {
+    margin-bottom: 83px;
+    padding: 9px 20px 0 213px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 45px;
+      margin-bottom: 27px;
+    }
+
+    p {
+      margin-bottom: 21px;
+
+      &:last-of-type {
+        margin-bottom: 45px;
+      }
+    }
+
+    &::before {
+      top: 0;
+      left: -3px;
+      width: 251px;
+      height: 362px;
+      background-image: url("../img/year-tablet@1x.png");
+      background-repeat: no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/year-tablet@2x.png");
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about__container {
+    margin-bottom: 69px;
+    padding: 0 14px;
+
+    &::before {
+      content: none;
+    }
+
+    h2 {
+      font-size: 28px;
+      line-height: 39px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 38px;
+      line-height: 22.5px;
+
+      &:last-of-type {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
