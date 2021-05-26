@@ -25,6 +25,19 @@
   font-display: swap;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 0.15;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+}
 
 *,
 *::before,
@@ -48,4 +61,8 @@ img {
 
 a {
   text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.4;
 }

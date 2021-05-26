@@ -19,6 +19,7 @@
   &:hover,
   &:focus {
     outline: 1px auto $color-text;
+    opacity: 1;
   }
 
   &:active {
