@@ -74,3 +74,48 @@
   background-color: $color-white;
   color: $color-black;
 }
+
+@media (max-width: $tablet-width) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .header__contacts-mail svg {
+    width: 25px;
+    height: auto;
+  }
+
+  .header__contacts-phone svg {
+    width: 24px;
+    height: auto;
+  }
+
+  .header__contacts p {
+    display: none;
+  }
+
+  .header__contacts-phone {
+    margin: 0;
+    margin-left: 33px;
+  }
+
+  .header__contacts .button {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header__logo-img {
+    width: 38px;
+    height: auto;
+  }
+
+  .header__logo-text {
+    display: none;
+  }
+
+  .header__logo-description {
+    display: none;
+  }
+}
