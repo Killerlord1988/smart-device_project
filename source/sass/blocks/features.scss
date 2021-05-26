@@ -23,7 +23,7 @@
 }
 
 .features__item:nth-child(odd) {
-  margin-right: 20px;
+  margin-right: auto;
 }
 
 .features__item--detective svg {
@@ -78,11 +78,11 @@ h3 {
 }
 
 
-@media (min-width: $tablet-width) {
-  .features__item {
-    width: 48%;
-  }
-}
+// @media (min-width: $tablet-width) {
+//   .features__item {
+//     width: 48%;
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .features__container {
@@ -97,10 +97,6 @@ h3 {
     max-width: 345px;
     min-height: auto;
     padding: 24px 23px 21px;
-
-    &:nth-child(odd) {
-      margin-right: 30px;
-    }
 
     svg {
       margin-bottom: 0;

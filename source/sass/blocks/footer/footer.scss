@@ -264,10 +264,7 @@
   }
 
   .footer__bottom-copyright {
-    position: absolute;
-    top: 36px;
-    left: 330px;
-    letter-spacing: 0;
+    display: none;
 
     span {
       display: none;
@@ -317,10 +314,10 @@
     }
   }
 
-  .footer__bottom-copyright {
-    top: 123px;
-    left: 50%;
-    width: 77%;
-    transform: translateX(-50%);
-  }
+  // .footer__bottom-copyright {
+  //   top: 123px;
+  //   left: 50%;
+  //   width: 77%;
+  //   transform: translateX(-50%);
+  // }
 }

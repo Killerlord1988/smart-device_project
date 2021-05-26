@@ -3,7 +3,7 @@
   background-image: url("../img/chip-desktop.png");
   background-repeat: no-repeat;
   background-position-x: 610px;
-  background-size: 820px 704px;
+  background-size: 820px auto;
 }
 
 .promo__title-block {
@@ -26,7 +26,7 @@
 
 .promo__title-description {
   position: relative;
-  margin-left: 95px;
+  padding-left: 95px;
   width: 690px;
   font-family: $main-font;
   font-style: normal;
@@ -45,7 +45,7 @@
   height: 2px;
 
   top: 17px;
-  left: -85px;
+  left: 5px;
 
   background-color: $color-white;
 }
@@ -87,4 +87,70 @@
 
   opacity: 0.5;
   transform: rotate(-90deg);
+}
+
+@media (max-width: $tablet-width) {
+  .promo {
+    background-image: url("../img/chip-tablet.png");
+    background-position: right;
+    background-size: 619px auto;
+  }
+
+  .promo__title-block {
+    margin-left: 63px;
+  }
+
+  .promo__title {
+    width: 400px;
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo__title-description {
+    width: 350px;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 156.8%;
+  }
+
+  .promo__title-description::before {
+    width: 33px;
+    top: 14px;
+  }
+}
+
+
+@media (max-width: $mobile-width) {
+  .promo {
+    background-image: url("../img/chip-mobile.png");
+    background-position-x: 50px;
+    background-position-y: -110px;
+    background-size: 630px auto;
+  }
+
+  .promo__title-block {
+    margin-left: 0;
+  }
+
+  .promo__title {
+    width: 250px;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.07em;
+  }
+
+  .promo__title-description {
+    width: 100%;
+    padding-left: 50px;
+    font-size: 16px;
+  }
+
+  .promo__title-description::before {
+    top: 12px;
+  }
+
+  .promo__title-block .button--blue-small {
+    width: 100%;
+  }
 }
