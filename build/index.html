@@ -230,7 +230,7 @@
             <input class="mask-phone" type="tel" id="phone" name="phone" placeholder="Телефон" maxlength="14" title="+7, не менее 7 и не более 10 цифр" required="">
           </div>
           <label class="visually-hidden" for="comment">Поле для ввода сообщения</label>
-          <textarea name="comment" id="comment" rows="4" cols="35" placeholder="Ваш вопрос"></textarea>
+          <textarea name="comment" id="comment" rows="4" cols="35" placeholder="Ваш вопрос" required=""></textarea>
           <div class="form__row form__row--submit">
             <button class="button button--submit" type="submit">Задать вопрос</button>
             <input class="visually-hidden" type="checkbox" id="agreement" name="agreement" checked="" required="">
@@ -289,8 +289,7 @@
           <div class="footer__accordion-panel footer__accordion-panel--no-js">
             <ul class="footer__list">
               <li class="footer__item footer__item--about"><a class="footer__item-link" href="#">О компании</a></li>
-              <li class="footer__item footer__item--details"><a class="footer__item-link" href="#">Комплектующие</a>
-              </li>
+              <li class="footer__item footer__item--details"><a class="footer__item-link" href="#">Комплектующие</a></li>
               <li class="footer__item footer__item--products"><a class="footer__item-link" href="#">Продукты</a></li>
               <li class="footer__item footer__item--delivery"><a class="footer__item-link" href="#">Доставка</a></li>
               <li class="footer__item footer__item--production"><a class="footer__item-link" href="#">Производство
@@ -304,7 +303,7 @@
 
         <section class="footer__contacts">
           <button class="footer__accordion accordion accordion--active" type="button" aria-label="Открыть выпадающий список" tabindex="-1">Наш офис</button>
-          <div class="footer__accordion-panel footer__accordion-panel--no-js footer__accordion-panel--active">
+          <div class="footer__accordion-panel footer__accordion-panel--active">
             <address class="footer__address">г. Мытищи, Олимпийский проспект,&nbsp;д.10</address>
             <ul class="footer__contacts-list">
               <li><a class="footer__contacts-link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
@@ -332,7 +331,6 @@
 
   </footer>
 
-    <!-- Модальное окно -->
   <section class="modal modal-overlay">
     <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
     <form class="form form--modal" action="https://echo.htmlacademy.ru" method="POST">
@@ -361,6 +359,7 @@
 
   <script src="js/lib/jquery-1.8.3.js"></script>
   <script src="js/lib/jquery.maskedinput.js"></script>
+  <script src="js/anchor.js"></script>
   <script src="js/modal.js"></script>
   <script src="js/accordion.js"></script>
   <script src="js/scrolldown.js"></script>
