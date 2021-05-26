@@ -1,10 +1,11 @@
+'use strict';
+
 var modalOpen = document.querySelector('.modal-overlay--open');
 var modalClose = document.querySelector('.modal__close');
 var modal = document.querySelector('.modal');
 var body = document.querySelector('body');
 
 var callName = document.querySelector('[name=call-name]');
-console.log(callName);
 var phone = document.querySelector('[name=call-phone]');
 var comment = document.querySelector('[name=call-comment]');
 var form = document.querySelector('.form--modal');
