@@ -27,6 +27,7 @@
     &::after {
       position: absolute;
       top: 50%;
+      transform: translateY(50%);
       right: 0;
       width: 16px;
       height: 16px;
@@ -35,25 +36,26 @@
     }
 
     &--active::after {
-      top: 25px;
+      top: 19px;
       content: url("../img/minus.svg");
     }
   }
 
-  .accordion__panel {
+  .footer__accordion-panel {
     display: none;
   }
 
-  .accordion__panel--hidden {
+  .footer__accordion-panel--hidden {
     display: none;
   }
 
-  .accordion__panel--visible,
-  .accordion__panel--no-js {
+  .footer__accordion-panel--visible,
+  .footer__accordion-panel--no-js {
     display: block;
   }
 
-  .accordion__panel--active {
+  .footer__accordion-panel--active {
     display: block;
+    padding-bottom: 23px;
   }
 }
