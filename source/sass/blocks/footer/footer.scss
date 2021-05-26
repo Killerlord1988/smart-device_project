@@ -158,13 +158,6 @@
   }
 }
 
-
-// @media (min-width: $tablet-width) {
-//   .page-footer__menu {
-//     padding-left: 50px;
-//   }
-// }
-
 @media (max-width: $tablet-width) {
   .footer {
     min-height: 457px;
@@ -293,10 +286,6 @@
     padding-bottom: 30px;
   }
 
-  // .footer__list {
-  //   padding-top: 20px;
-  // }
-
   .footer__contacts {
     width: 100%;
     padding-left: 0;
@@ -313,11 +302,4 @@
       text-align: center;
     }
   }
-
-  // .footer__bottom-copyright {
-  //   top: 123px;
-  //   left: 50%;
-  //   width: 77%;
-  //   transform: translateX(-50%);
-  // }
 }
