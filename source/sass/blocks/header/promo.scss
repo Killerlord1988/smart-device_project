@@ -101,9 +101,12 @@
     background-image: url("../img/chip-tablet.png");
     background-position: right;
     background-size: 619px auto;
+    background-position-y: -120px;
   }
 
   .promo__title-block {
+    padding-top: 44px;
+    padding-bottom: 165px;
     margin-left: 63px;
   }
 
@@ -115,7 +118,8 @@
   }
 
   .promo__title-description {
-    width: 350px;
+    margin-bottom: 55px;
+    width: 400px;
     padding-left: 50px;
     font-size: 18px;
     line-height: 156.8%;

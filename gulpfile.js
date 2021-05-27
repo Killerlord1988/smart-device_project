@@ -40,6 +40,7 @@ gulp.task("script-min", function() {
     "source/js/modal.js",
     "source/js/accordion.js",
     "source/js/scrolldown.js",
+    "source/js/about-description.js",
     "source/js/script.js"
 ])
 .pipe(sourcemap.init())

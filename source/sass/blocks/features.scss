@@ -83,11 +83,13 @@ h3 {
 
 @media (max-width: $tablet-width) {
   .features__container {
-    padding: 53px 25px 20px;
+    padding: 53px 25px 10px;
   }
 
   .features__list {
     justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .features__item {
@@ -101,6 +103,10 @@ h3 {
 
     h3 {
       margin-bottom: 7px;
+    }
+
+    p {
+      margin: 7px 0;
     }
 
     &--detective {
