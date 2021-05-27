@@ -2,16 +2,17 @@
   position: relative;
   background-image: url("../img/chip-desktop.png");
   background-repeat: no-repeat;
-  background-position-x: 610px;
+  background-position-x: 620px;
   background-size: 820px auto;
 }
 
 .promo__title-block {
-  padding-top: 200px;
-  padding-bottom: 250px;
+  padding-top: 130px;
+  padding-bottom: 280px;
 }
 
 .promo__title {
+  margin-bottom: 30px;
   font-family: $second-font;
   font-style: normal;
   font-weight: bold;
@@ -25,9 +26,10 @@
 }
 
 .promo__title-description {
+  margin-bottom: 40px;
   position: relative;
   padding-left: 95px;
-  width: 690px;
+  width: 720px;
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
@@ -75,8 +77,8 @@
   cursor: pointer;
   margin: 0;
   position: absolute;
-  left: 0;
-  bottom: 90px;
+  left: -25px;
+  bottom: 125px;
 
   font-style: normal;
   font-weight: normal;

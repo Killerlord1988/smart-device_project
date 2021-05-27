@@ -1,5 +1,5 @@
 .feedback {
-  min-height: 670px;
+  min-height: 680px;
 
   background-image: url("../img/form-bg-desktop.svg");
   background-size: contain;
@@ -9,7 +9,7 @@
 }
 
 .feedback__container {
-  padding: 0 122px 0 95px;
+  padding: 0 142px 0 95px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,7 +50,8 @@
 @media (min-width: $tablet-width) {
   .feedback__image {
     &::after {
-      left: -75px;
+      left: 10px;
+      top: -120px;
     }
   }
 }

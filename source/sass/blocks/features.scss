@@ -6,6 +6,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -47,6 +49,8 @@ h3 {
   position: relative;
   font-family: $second-font;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
   color: $color-blue;
 }
 
@@ -76,13 +80,6 @@ h3 {
     fill: $color-white;
   }
 }
-
-
-// @media (min-width: $tablet-width) {
-//   .features__item {
-//     width: 48%;
-//   }
-// }
 
 @media (max-width: $tablet-width) {
   .features__container {

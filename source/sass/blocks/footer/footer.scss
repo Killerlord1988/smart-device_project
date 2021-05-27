@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 61px;
+  padding-top: 65px;
 }
 
 .footer__content {
@@ -24,6 +24,7 @@
 
 .footer__logo-title {
   margin: 0;
+  margin-top: 4px;
   font-family: $second-font;
   font-style: normal;
   font-weight: bold;
@@ -58,7 +59,7 @@
 
 .footer__menu {
   width: 50%;
-  padding-left: 138px;
+  padding-left: 220px;
   flex-grow: 1;
 }
 
@@ -146,6 +147,10 @@
   letter-spacing: 0.04em;
   opacity: 50%;
   color: $color-black;
+}
+
+.footer__confidentiality {
+  margin-right: 250px;
 }
 
 .footer__bottom-copyright span {
@@ -262,6 +267,10 @@
     span {
       display: none;
     }
+  }
+
+  .footer__confidentiality {
+    margin-right: 0;
   }
 }
 
