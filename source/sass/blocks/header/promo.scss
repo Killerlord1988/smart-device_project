@@ -129,8 +129,11 @@
     width: 33px;
     top: 14px;
   }
-}
 
+  .promo__scroll {
+    display: none;
+  }
+}
 
 @media (max-width: $mobile-width) {
   .promo {
@@ -142,6 +145,8 @@
 
   .promo__title-block {
     margin-left: 0;
+    padding-top: 175px;
+    padding-bottom: 74px;
   }
 
   .promo__title {
@@ -152,6 +157,7 @@
   }
 
   .promo__title-description {
+    margin-bottom: 40px;
     width: 100%;
     padding-left: 50px;
     font-size: 16px;
