@@ -1,3 +1,4 @@
+'use strict';
 var links = document.querySelectorAll('[data-link]');
 
 if (links) {
@@ -15,4 +16,4 @@ if (links) {
       }
     });
   }
-};
+}

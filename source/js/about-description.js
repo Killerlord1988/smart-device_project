@@ -1,25 +1,25 @@
 'use strict';
 
-  var WORDS_COUNT = 23;
-  var DEVIDER = '..';
+var WORDS_COUNT = 23;
+var DEVIDER = '..';
 
-  var tablet = window.matchMedia('(max-width: 1023px)');
+var tablet = window.matchMedia('(max-width: 1023px)');
 
-  var textContainer = document.querySelector('.about p:last-of-type');
+var textContainer = document.querySelector('.about p:last-of-type');
 
-  var originalText = textContainer.innerText;
+var originalText = textContainer.innerText;
 
-  var smallText = originalText.split(' ', WORDS_COUNT).join(' ').concat(DEVIDER);
+var smallText = originalText.split(' ', WORDS_COUNT).join(' ').concat(DEVIDER);
 
-  if (textContainer) {
-    var changeTextHandler = function (evt) {
-      if (evt.matches) {
-        textContainer.innerText = smallText;
-      } else {
-        textContainer.innerText = originalText;
-      }
-    };
-  }
+if (textContainer) {
+  var changeTextHandler = function (evt) {
+    if (evt.matches) {
+      textContainer.innerText = smallText;
+    } else {
+      textContainer.innerText = originalText;
+    }
+  };
+}
 
-  tablet.addListener(changeTextHandler);
-  changeTextHandler(tablet);
+tablet.addListener(changeTextHandler);
+changeTextHandler(tablet);
