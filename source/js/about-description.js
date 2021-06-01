@@ -6,7 +6,6 @@
   var tablet = window.matchMedia('(max-width: 1023px)');
 
   var textContainer = document.querySelector('.about p:last-of-type');
-  console.log(textContainer);
 
   var originalText = textContainer.innerText;
 

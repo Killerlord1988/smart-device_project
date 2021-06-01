@@ -3,6 +3,7 @@
 var modalOpen = document.querySelector('.modal-overlay--open');
 var modalClose = document.querySelector('.modal__close');
 var modal = document.querySelector('.modal');
+var modalOverlayWrapper = document.querySelector('.modal-overlay__wrapper');
 var body = document.querySelector('body');
 
 var callName = document.querySelector('[name=call-name]');
@@ -25,11 +26,11 @@ try {
 
 var setVisible = function (visible) {
   if (visible) {
-    body.classList.add('modal-overlay--open');
+    body.classList.add('modal-overlay__wrapper--open');
     document.addEventListener('keydown', escapeClickHandler);
   } else {
-    body.classList.remove('modal-overlay--open');
-    modal.classList.remove('modal-overlay--show');
+    body.classList.remove('modal-overlay__wrapper--open');
+    modal.classList.remove('modal-overlay__wrapper--show');
     document.removeEventListener('keydown', escapeClickHandler);
   }
 };
@@ -41,9 +42,9 @@ var escapeClickHandler = function (evt) {
   }
 };
 
-if (modal) {
-  modal.addEventListener('click', function (evt) {
-    if (evt.target === modal && evt.target !== form) {
+if (modalOverlayWrapper) {
+  modalOverlayWrapper.addEventListener('click', function (evt) {
+    if (evt.target === modalOverlayWrapper && evt.target !== form) {
       setVisible(false);
     }
   });
@@ -53,7 +54,7 @@ if (modalOpen) {
   modalOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
     if (modal) {
-      modal.classList.add('modal-overlay--show');
+      modal.classList.add('modal-overlay__wrapper--show');
       setVisible(true);
       callName.focus();
     }
@@ -69,7 +70,7 @@ if (modalOpen) {
 if (modalClose) {
   modalClose.addEventListener('click', function (evt) {
     evt.preventDefault();
-    modal.classList.remove('modal-overlay--show');
+    modal.classList.remove('modal-overlay__wrapper--show');
     setVisible(false);
   });
 }
