@@ -6,6 +6,7 @@ document.querySelectorAll('.footer__content .footer__accordion-panel--no-js').fo
   n.classList.remove('footer__accordion-panel--no-js');
 });
 
+/* eslint-disable */
 for (var i = 0; i < acc.length; i++) {
   acc[i].addEventListener('click', function () {
     this.classList.toggle('accordion--active');
@@ -21,3 +22,4 @@ for (var i = 0; i < acc.length; i++) {
     }
   });
 }
+/* eslint-enable */

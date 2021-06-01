@@ -1,3 +1,4 @@
 'use strict';
-/* eslint-disable no-use-before-define */
+/* eslint-disable */
 $('.mask-phone').mask('+7 (999) 999-99-99');
+/* eslint-enable */
