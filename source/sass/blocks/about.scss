@@ -1,7 +1,18 @@
 .about__container {
   position: relative;
-  margin-bottom: 112px;
+  margin-bottom: 96px;
   padding: 21px 122px 0 310px;
+  background-image: url("../img/year-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 220px 317px;
+  background-position: 100px 29px;
+  padding-bottom: 15px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .about__container {
+    background-image: url("../img/year-desktop@2x.png");
+  }
 }
 
 .about__container h2 {
@@ -27,28 +38,31 @@
   margin-bottom: 40px;
 }
 
-.about__container::before {
-  position: absolute;
-  top: 29px;
-  left: 90px;
-  width: 220px;
-  height: 317px;
-  background-image: url("../img/year-desktop@1x.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  content: "";
-}
+// .about__container::before {
+//   position: absolute;
+//   top: 29px;
+//   left: 90px;
+//   width: 220px;
+//   height: 317px;
+//   background-image: url("../img/year-desktop@1x.png");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   content: "";
+// }
 
-@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-  .about__container::before {
-    background-image: url("../img/year-desktop@2x.png");
-  }
-}
+// @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+//   .about__container::before {
+//     background-image: url("../img/year-desktop@2x.png");
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .about__container {
-    margin-bottom: 83px;
-    padding: 9px 20px 0 213px;
+    margin-bottom: 78px;
+    padding: 9px 20px 5px 213px;
+    background-image: url("../img/year-tablet@1x.png");
+    background-size: 251px 362px;
+    background-position: 0 12px;
 
     h2 {
       font-size: 32px;
@@ -64,18 +78,18 @@
       }
     }
 
-    &::before {
-      top: 0;
-      left: -3px;
-      width: 251px;
-      height: 362px;
-      background-image: url("../img/year-tablet@1x.png");
-      background-repeat: no-repeat;
+    // &::before {
+    //   top: 0;
+    //   left: -3px;
+    //   width: 251px;
+    //   height: 362px;
+    //   background-image: url("../img/year-tablet@1x.png");
+    //   background-repeat: no-repeat;
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/year-tablet@2x.png");
-      }
-    }
+    //   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    //     background-image: url("../img/year-tablet@2x.png");
+    //   }
+    // }
   }
 }
 
@@ -83,10 +97,11 @@
   .about__container {
     margin-bottom: 69px;
     padding: 0 14px;
+    background: none;
 
-    &::before {
-      content: none;
-    }
+    // &::before {
+    //   content: none;
+    // }
 
     h2 {
       font-size: 28px;
