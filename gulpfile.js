@@ -32,10 +32,23 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
-gulp.task("script-min", function() {
+gulp.task("vendor-script", function() {
   return gulp.src([
     "source/js/lib/jquery-1.8.3.js",
-    "source/js/lib/jquery.maskedinput.js",
+    "source/js/lib/jquery.maskedinput.js"
+])
+.pipe(sourcemap.init())
+  // .pipe(gulp.dest("build/js"))
+  .pipe(concat('vendor.js'))
+  .pipe(babel())
+  .pipe(uglify())
+  // .pipe(rename({suffix: ".min"}))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("build/js"));
+});
+
+gulp.task("main-script", function() {
+  return gulp.src([
     "source/js/anchor.js",
     "source/js/modal.js",
     "source/js/accordion.js",
@@ -45,10 +58,10 @@ gulp.task("script-min", function() {
 ])
 .pipe(sourcemap.init())
   // .pipe(gulp.dest("build/js"))
-  .pipe(concat('script.js'))
+  .pipe(concat('main.js'))
   .pipe(babel())
   .pipe(uglify())
-  .pipe(rename({suffix: ".min"}))
+  // .pipe(rename({suffix: ".min"}))
   .pipe(sourcemap.write("."))
   .pipe(gulp.dest("build/js"));
 });
@@ -62,7 +75,8 @@ gulp.task("server", function () {
     ui: false
   });
 
-  gulp.watch("source/js/**/*.js", gulp.series("script-min"));
+  gulp.watch("source/js/**/*.js", gulp.series("vendor-script"));
+  gulp.watch("source/js/**/*.js", gulp.series("main-script"));
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
@@ -110,7 +124,7 @@ gulp.task("copy", function () {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
+    // "source/js/**",
     "source//*.ico"
     ], {
       base: "source"
@@ -122,5 +136,5 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "script-min", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "vendor-script", "main-script", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
