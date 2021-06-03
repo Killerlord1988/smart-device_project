@@ -22,7 +22,7 @@
   margin-right: 16px;
 }
 
-.footer__logo-title {
+.footer__logo-text p {
   margin: 0;
   margin-top: 4px;
   font-family: $second-font;
@@ -34,7 +34,7 @@
   user-select: none;
 }
 
-.footer__tablet-copyright {
+.footer__tablet-copyright p {
   display: none;
 }
 
@@ -133,9 +133,8 @@
   align-items: center;
 }
 
-.footer__bottom-copyright,
-.footer__confidentiality,
-.footer__developed {
+.footer__content-bottom p,
+.footer__content-bottom a {
   text-transform: uppercase;
   font-style: normal;
   font-weight: normal;
@@ -149,7 +148,7 @@
   color: $color-black;
 }
 
-.footer__confidentiality {
+.footer__confidentiality p {
   margin-right: 250px;
 }
 
@@ -173,7 +172,7 @@
     margin-bottom: 0;
   }
 
-  .footer__tablet-copyright {
+  .footer__tablet-copyright p {
     display: block;
     font-style: normal;
     font-weight: normal;
@@ -269,7 +268,7 @@
     }
   }
 
-  .footer__confidentiality {
+  .footer__confidentiality p {
     margin-right: 0;
   }
 }

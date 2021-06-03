@@ -11,7 +11,7 @@
   padding-bottom: 280px;
 }
 
-.promo__title {
+.promo__title-block h1 {
   margin-bottom: 30px;
   font-family: $second-font;
   font-style: normal;
@@ -25,7 +25,7 @@
   color: $color-white;
 }
 
-.promo__title-description {
+.promo__title-block p {
   margin-bottom: 40px;
   position: relative;
   padding-left: 95px;
@@ -39,7 +39,7 @@
   color: $color-white;
 }
 
-.promo__title-description::before {
+.promo__title-block p::before {
   position: absolute;
   content: "";
 
@@ -73,7 +73,7 @@
   color: $color-white;
 }
 
-.promo__scroll {
+.promo p {
   cursor: pointer;
   margin: 0;
   position: absolute;
@@ -110,14 +110,14 @@
     margin-left: 63px;
   }
 
-  .promo__title {
+  .promo__title-block h1 {
     width: 400px;
     font-size: 60px;
     line-height: 70px;
     letter-spacing: 0.07em;
   }
 
-  .promo__title-description {
+  .promo__title-block p {
     margin-bottom: 55px;
     width: 400px;
     padding-left: 50px;
@@ -125,12 +125,12 @@
     line-height: 156.8%;
   }
 
-  .promo__title-description::before {
+  .promo__title-block p::before {
     width: 33px;
     top: 14px;
   }
 
-  .promo__scroll {
+  .promo p {
     display: none;
   }
 }
@@ -149,21 +149,21 @@
     padding-bottom: 74px;
   }
 
-  .promo__title {
+  .promo__title-block h1 {
     width: 250px;
     font-size: 40px;
     line-height: 47px;
     letter-spacing: 0.07em;
   }
 
-  .promo__title-description {
+  .promo__title-block p {
     margin-bottom: 40px;
     width: 100%;
     padding-left: 50px;
     font-size: 16px;
   }
 
-  .promo__title-description::before {
+  .promo__title-block p::before {
     top: 12px;
   }
 
