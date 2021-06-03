@@ -6,12 +6,11 @@ document.querySelectorAll('.footer__content .footer__accordion-panel--no-js').fo
   n.classList.remove('footer__accordion-panel--no-js');
 });
 
-/* eslint-disable */
 for (var i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
-    this.classList.toggle('accordion--active');
+  acc[i].addEventListener('click', function (evt) {
+    evt.target.classList.toggle('accordion--active');
 
-    var panel = this.nextElementSibling;
+    var panel = evt.target.nextElementSibling;
     if (panel.classList.contains('footer__accordion-panel--active')) {
       panel.classList.remove('footer__accordion-panel--active');
       panel.classList.add('footer__accordion-panel');
@@ -22,4 +21,3 @@ for (var i = 0; i < acc.length; i++) {
     }
   });
 }
-/* eslint-enable */
