@@ -186,12 +186,12 @@
   }
 
   .footer__container {
-    padding: 14px 25px 0;
+    padding: 17px 25px 0;
   }
 
   .footer__content {
     flex-wrap: wrap;
-    margin-bottom: 28px;
+    margin-bottom: 35px;
   }
 
   .footer__links {
@@ -258,6 +258,10 @@
   .footer__contacts {
     width: 50%;
     padding-left: 17px;
+  }
+
+  .footer__container--bottom {
+    padding-top: 8px;
   }
 
   .footer__bottom-copyright {
@@ -331,6 +335,10 @@
     padding-left: 0;
   }
 
+  .footer__container--bottom {
+    padding-top: 30px;
+  }
+
   .footer__content-bottom {
     flex-direction: column;
     justify-content: center;
@@ -342,5 +350,10 @@
       width: 100%;
       text-align: center;
     }
+  }
+
+  .footer__developed p {
+    margin: 0;
+    margin-top: 21px;
   }
 }
