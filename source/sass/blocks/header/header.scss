@@ -31,14 +31,15 @@
   display: flex;
 }
 
+.header__contacts-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .header__contacts-link {
   display: flex;
   align-items: center;
-}
-
-.header__contacts-link--phone {
   margin-left: 88px;
-  margin-right: 50px;
 }
 
 .header__contacts-link p {
@@ -75,6 +76,10 @@
   color: $color-black;
 }
 
+.header__contacts .button {
+  margin-left: 50px;
+}
+
 @media (max-width: $tablet-width) {
   .header {
     padding-top: 20px;
@@ -93,6 +98,10 @@
 
   .header__contacts p {
     display: none;
+  }
+
+  .header__contacts-link {
+    margin: 0;
   }
 
   .header__contacts-link--phone {
