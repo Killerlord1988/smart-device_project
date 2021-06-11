@@ -20,13 +20,12 @@
   <header class="header-promo">
     <section class="header-promo__header header container">
       <h2 class="visually-hidden">Контакты и заказать звонок</h2>
-      <a class="header__logo-link" href="#">
-        <img width="52" height="52" src="img/logo.svg" alt="логотип">
-        <div class="header__logo-text">
-          <p>Smart&nbsp;Device</p>
-          <img width="105" height="10" src="img/logo-description.svg" alt="надпись в логотипе">
-        </div>
-      </a>
+      <div class="header__logo-link">
+        <picture>
+          <source media="(max-width: 740px)" srcset="img/logo-mobile.svg" />
+          <img src="img/logo-desktop.svg" width="202" height="52" alt="Логотип" />
+        </picture>
+      </div>
       <div class="header__contacts">
         <div class="header__contacts-wrapper">
           <a class="header__contacts-link header__contacts-link--mail" href="mailto:info@sd.ru">
@@ -53,8 +52,10 @@
       <div class="promo__title-block">
         <h1>Печатные платы</h1>
         <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <button class="button button--blue button--blue-big no-js" type="button" data-link="consultation">Получить бесплатную консультацию</button>
-        <button class="button button--blue button--blue-small no-js" type="button" data-link="consultation">Бесплатная консультация</button>
+        <button class="button button--blue button--blue-big no-js" type="button" data-link="consultation">Получить
+          бесплатную консультацию</button>
+        <button class="button button--blue button--blue-small no-js" type="button" data-link="consultation">Бесплатная
+          консультация</button>
       </div>
       <div class="promo__scroll">
         <p>Скролл вниз</p>
@@ -214,13 +215,9 @@
         <section class="footer__links">
           <h2 class="visually-hidden">Мы в социальных сетях</h2>
 
-          <a class="footer__logo-link" href="#">
-            <img width="52" height="52" src="img/logo.svg" alt="логотип">
-            <div class="footer__logo-text">
-              <p>Smart&nbsp;Device</p>
-              <img width="105" height="10" src="img/logo-description.svg" alt="надпись в логотипе">
-            </div>
-          </a>
+          <div class="footer__logo-link">
+              <img src="img/logo-footer-desktop.svg" width="216" height="52" alt="Логотип" />
+          </div>
           <div class="footer__tablet-copyright">
             <p>1999-2018 SD Service Devices</p>
           </div>

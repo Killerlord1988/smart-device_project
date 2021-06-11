@@ -6,25 +6,9 @@
   padding-bottom: 33px;
 }
 
-.header__logo-link {
+.header-link {
   display: flex;
   align-items: center;
-}
-
-.header__logo-link img {
-  margin-right: 16px;
-}
-
-.header__logo-text p {
-  margin: 0;
-  margin-top: 4px;
-  font-family: $second-font;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
-  line-height: 29px;
-  color: $color-white;
-  user-select: none;
 }
 
 .header__contacts {
@@ -115,12 +99,8 @@
 }
 
 @media (max-width: $mobile-width) {
-  .header__logo-link img {
+  .header__logo-link {
     width: 38px;
-    height: auto;
-  }
-
-  .header__logo-text {
-    display: none;
+    height: 38px;
   }
 }
