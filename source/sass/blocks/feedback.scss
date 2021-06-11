@@ -24,6 +24,20 @@
   background-position: 13px 163px;
 }
 
+@media (max-width: 1630px) {
+  .feedback {
+    background-size: 220px auto, 400px auto;
+    background-position: right 100px, 175px 100px;
+  }
+}
+
+@media (max-width: 1230px) {
+  .feedback {
+    background-position: right 100px, 5% 100px;
+  }
+}
+
+
 @media (max-width: 1320px) {
   .feedback__image {
     background-size: 300px auto;
