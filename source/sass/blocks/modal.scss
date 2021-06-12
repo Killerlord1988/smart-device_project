@@ -37,3 +37,7 @@
     transform: rotate(-45deg);
   }
 }
+
+input[type="checkbox"]:focus ~ label[for="call-agreement"]::before {
+  outline: 1px solid $color-black;
+}

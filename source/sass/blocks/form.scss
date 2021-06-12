@@ -62,6 +62,10 @@
     bottom: 27px;
   }
 
+  input[type="checkbox"]:focus ~ label[for="agreement"]::before {
+    outline: 1px solid $color-black;
+  }
+
   input[type="checkbox"] + label {
     font-size: 14px;
     line-height: 16px;
