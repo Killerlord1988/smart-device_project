@@ -1,3 +1,7 @@
 .no-js {
   display: none;
 }
+
+.no-js-after::after {
+  display: none;
+}
