@@ -73,3 +73,7 @@ a {
 a:hover {
   opacity: 0.4;
 }
+
+input::placeholder {
+  overflow: visible;
+}
